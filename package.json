@@ -1,0 +1,17 @@
+{
+  "name": "lighthouse-spike",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/lighthouse/lighthouse-cli/index.js $URL --output-path=./results/results",
+    "test-headless": "./node_modules/lighthouse/lighthouse-cli/index.js $URL --chrome-flags=\"--headless\" --output-path=./results/results",
+    "test-json-headless": "./node_modules/lighthouse/lighthouse-cli/index.js $URL --chrome-flags=\"--headless\" --output json --output html --output-path=./results/results"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lighthouse": "^5.6.0"
+  }
+}
